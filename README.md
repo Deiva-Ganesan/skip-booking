@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+📦 We Want Waste – Skip Selector
+This is a responsive React component designed to help users select skip sizes for waste disposal, inspired by the layout and user flow in the provided design (sample.pdf). The component fetches real-time skip data from a remote API and includes intuitive UI/UX for selection, pricing, and order confirmation.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
+✅ Live data fetch via API (axios)
 
-## Available Scripts
+✅ Fully responsive layout (mobile & desktop)
 
-In the project directory, you can run:
+✅ Visual skip cards with:
 
-### `npm start`
+Size
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Price
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Hire period
 
-### `npm test`
+Road and heavy waste eligibility
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ Click-to-select toggle
 
-### `npm run build`
+✅ Sticky footer with:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Disclaimer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Summary info
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Back / Continue actions
 
-### `npm run eject`
+✅ “Order Placed Successfully” confirmation dialog
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📸 Screenshots
+Desktop	Mobile
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the Repository
+git clone https://github.com/yourusername/wewantwaste-skip-selector.git
+cd wewantwaste-skip-selector
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install Dependencies
+npm install
 
-## Learn More
+3. Start the Development Server
+npm start
+🌐 API Source
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Data is pulled from:
+https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
+This returns all available skip options based on location.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🧪 How to Use
+Select a skip by clicking any card.
 
-### Code Splitting
+A summary footer will appear.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Click Back to unselect or Continue to confirm the booking.
 
-### Analyzing the Bundle Size
+A modal confirms the booking success.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🛠 Tech Stack
+React (Functional components + hooks)
 
-### Making a Progressive Web App
+Axios (API fetching)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Tailwind CSS (Styling and responsive layout)
 
-### Advanced Configuration
+No external libraries for modal or routing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📁 File Structure
 
-### Deployment
+src/
+  ├── components/
+  │   └── SkipSelector.js      # Main component
+  ├── pages/
+  │   └── Home.js              # Page using SkipSelector
+  ├── index.css                # Tailwind CSS directives
+  ├── App.js / index.js        # App entry
+public/
+  └── [skip images].jpg        # Images (named as {size}-yarder-skip.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+📦 Deployment
+Deployed this app using: CodeSandbox
 
-### `npm run build` fails to minify
+📃 License
+This project is for demonstration/testing purposes and is not production-certified. Customize and reuse freely.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🙋‍♀️ Contact
+For questions or help integrating this into your application:
+
+Deiva Ganesan
+📧 deiva.ganesan.2000@gmail.com
+🔗 https://github.com/Deiva-Ganesan
