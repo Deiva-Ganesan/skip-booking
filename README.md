@@ -1,5 +1,5 @@
 📦 We Want Waste – Skip Selector
-This is a responsive React component designed to help users select skip sizes for waste disposal, inspired by the layout and user flow in the provided design (sample.pdf). The component fetches real-time skip data from a remote API and includes intuitive UI/UX for selection, pricing, and order confirmation.
+This is a responsive React component designed to help users select skip sizes for waste disposal, inspired by the layout and user flow in the provided design. The component fetches real-time skip data from a remote API and includes intuitive UI/UX for selection, pricing, and order confirmation.
 
 ✨ Features
 ✅ Live data fetch via API (axios)
@@ -27,9 +27,6 @@ Summary info
 Back / Continue actions
 
 ✅ “Order Placed Successfully” confirmation dialog
-
-📸 Screenshots
-Desktop	Mobile
 
 🚀 Getting Started
 
@@ -80,6 +77,7 @@ public/
 
 📦 Deployment
 Deployed this app using: CodeSandbox
+Link: https://wmlvtj-3000.csb.app/
 
 📃 License
 This project is for demonstration/testing purposes and is not production-certified. Customize and reuse freely.
